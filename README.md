@@ -1,4 +1,4 @@
-# REST API Parking Spot Controll 
+# API Parking Spot Controll 
 
 This is a simple application named as parking-spot-controll to solidify a few concepts about springboot framework.
 
