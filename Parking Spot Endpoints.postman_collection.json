@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "adb644ec-b257-4670-903e-dc72515800bb",
+		"name": "Parking Spot Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6885805"
+	},
+	"item": [
+		{
+			"name": "POST Parking Spot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"parkingSpotNumber\": \"2054T\",\r\n    \"licencePlateCar\": \"ABVC6\",\r\n    \"brandCar\": \"Honda\",\r\n    \"modelCar\": \"HR-V\",\r\n    \"colorCar\": \"Black\",\r\n    \"responsibleName\": \"Test\",\r\n    \"apartment\": \"145\",\r\n    \"block\":\"B\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Parking Spot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"parkingSpotNumber\": \"205A\",\r\n        \"licencePlateCar\": \"RR8561\",\r\n        \"brandCar\": \"AUDI\",\r\n        \"modelCar\": \"Q5\",\r\n        \"colorCar\": \"Black\",\r\n        \"responsibleName\": \"Vera Lalli\",\r\n        \"apartment\": \"14\",\r\n        \"block\": \"C\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/b0037ffa-1709-48f7-878e-fd64b971941f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"b0037ffa-1709-48f7-878e-fd64b971941f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL Parking Spots",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot?page=0&size=5&sort=registrationDate,DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "registrationDate,DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE Parking Spots",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/d4e23dde-ad4d-4034-aeeb-8ecf2594614b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"d4e23dde-ad4d-4034-aeeb-8ecf2594614b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ONE Parking Spots",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/d4e23dde-ad4d-4034-aeeb-8ecf2594675a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"d4e23dde-ad4d-4034-aeeb-8ecf2594675a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
